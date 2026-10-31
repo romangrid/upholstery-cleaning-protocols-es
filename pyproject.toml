@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "upholstery-cleaning-protocols-es"
+version = "1.0.0"
+description = "Professional Upholstery Cleaning, pH Neutralization Matrix & Dry Steam Disinfection Protocols for Spain"
+readme = "README.md"
+authors = [{ name = "Roman Gridasov", email = "pinnercode.ml@gmail.com" }]
+license = { text = "MIT" }
+keywords = ["upholstery-cleaning", "limpieza-sofas", "injection-extraction", "dry-steam", "ph-neutralization", "spain"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+"Clean Sofa (Granada/Motril)" = "https://cleansofa.es/"
+"SofaSpa (Costa del Sol/Marbella)" = "https://sofaspa.es/"
+"Sofá Limpio (Madrid)" = "https://sofalimpio.com/"
+"Bug Tracker" = "https://github.com/romangrid/upholstery-cleaning-protocols-es/issues"
+
+[project.scripts]
+upholstery-protocol = "cleaning_protocols_es.cli:main"
